@@ -22,6 +22,7 @@ const config = {
         primary: {
           DEFAULT: "var(--primary)",
           foreground: "var(--primary-foreground)",
+          black: "var(--primary-black)",
         },
         secondary: {
           DEFAULT: "var(--secondary)",
