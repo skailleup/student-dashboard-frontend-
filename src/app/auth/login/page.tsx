@@ -62,9 +62,13 @@ export default function Page() {
             />
 
             <div className="flex flex-col md:flex-row items-center mt-8 justify-between">
-              <Link href="#">Forgot your student ID?</Link>
+              <Link href="/auth/forgot-studentid" style={{ fontWeight: 600 }}>
+                Forgot your student ID?
+              </Link>
 
-              <Link href="#">Forgot your password?</Link>
+              <Link href="/auth/forgot-password" style={{ fontWeight: 600 }}>
+                Forgot your password?
+              </Link>
             </div>
 
             <div className="flex items-center space-x-2 mt-8">

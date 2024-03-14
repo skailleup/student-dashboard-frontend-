@@ -23,6 +23,7 @@ const config = {
           DEFAULT: "var(--primary)",
           foreground: "var(--primary-foreground)",
           black: "var(--primary-black)",
+          gray: "var(--primary-gray)",
         },
         secondary: {
           DEFAULT: "var(--secondary)",
