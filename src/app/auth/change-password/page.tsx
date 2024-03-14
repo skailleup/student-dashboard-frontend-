@@ -61,7 +61,7 @@ export default function Page() {
             </div>
 
             <Button type="submit" className="w-full mt-8">
-              Log In
+              Change Password
             </Button>
           </div>
         </form>
