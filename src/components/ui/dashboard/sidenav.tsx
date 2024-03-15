@@ -20,8 +20,8 @@ export default function SideNav() {
         </div>
       </Link>
 
-      <div className="flex flex-col grow md:h-auto justify-between space-x-2 md:space-x-0 items-center">
-        <div>
+      <div className="flex flex-col grow md:h-auto justify-between items-center">
+        <div className="w-full md:w-auto">
           <NavLinks />
         </div>
 

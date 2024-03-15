@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Form } from "@/components/ui/form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Resolver, useForm } from "react-hook-form";
@@ -10,8 +10,12 @@ import { Button } from "@/components/ui/button";
 import { ChangePasswordType } from "@/types/auth";
 import { changePasswordSchema } from "@/schema";
 import AppInput from "@/components/ui/app-input";
+import PasswordChangeSuccessModal from "@/components/ui/dialog/pwd-change-success-modal";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 
 export default function Page() {
+  const [open, setOpen] = useState(false);
+
   const formHook = useForm<ChangePasswordType>({
     resolver: yupResolver(changePasswordSchema),
     defaultValues: {
@@ -23,7 +27,8 @@ export default function Page() {
   const { handleSubmit, control } = formHook;
 
   const submit = async (data: ChangePasswordType) => {
-    console.log("data", data);
+    // console.log("data", data);
+    setOpen(true);
   };
 
   return (
@@ -60,9 +65,15 @@ export default function Page() {
               </Link>
             </div>
 
-            <Button type="submit" className="w-full mt-8">
-              Change Password
-            </Button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button type="submit" className="w-full mt-8">
+                  Change Password
+                </Button>
+              </DialogTrigger>
+
+              <PasswordChangeSuccessModal open={open} onOpenChange={setOpen} />
+            </Dialog>
           </div>
         </form>
       </Form>

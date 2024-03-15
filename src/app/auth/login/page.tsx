@@ -6,6 +6,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { Resolver, useForm } from "react-hook-form";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
@@ -15,6 +16,7 @@ import AppInput from "@/components/ui/app-input";
 
 export default function Page() {
   const [checked, setChecked] = useState(false);
+  const router = useRouter();
 
   const formHook = useForm<LoginInType>({
     resolver: yupResolver(loginInSchema),
@@ -27,7 +29,8 @@ export default function Page() {
   const { handleSubmit, control } = formHook;
 
   const submit = async (data: LoginInType) => {
-    console.log("data", data);
+    // console.log("data", data);
+    router.push("/dashboard");
   };
 
   return (
