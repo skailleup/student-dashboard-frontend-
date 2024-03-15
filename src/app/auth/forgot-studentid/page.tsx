@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Form } from "@/components/ui/form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Resolver, useForm } from "react-hook-form";
@@ -9,8 +9,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { forgotStudentIdSchema } from "@/schema";
 import AppInput from "@/components/ui/app-input";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+import StudentIdChangeSuccessModal from "@/components/ui/dialog/stdid-change-success-modal";
 
 export default function Page() {
+  const [open, setOpen] = useState(false);
+
   const formHook = useForm<{ email: string }>({
     resolver: yupResolver(forgotStudentIdSchema),
     defaultValues: {
@@ -21,7 +25,8 @@ export default function Page() {
   const { handleSubmit, control } = formHook;
 
   const submit = async (data: { email: string }) => {
-    console.log("data", data);
+    // console.log("data", data);
+    setOpen(true);
   };
 
   return (
@@ -54,9 +59,15 @@ export default function Page() {
               </Link>
             </div>
 
-            <Button type="submit" className="w-full mt-8">
-              Send my student ID
-            </Button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button type="submit" className="w-full mt-8">
+                  Send my student ID
+                </Button>
+              </DialogTrigger>
+
+              <StudentIdChangeSuccessModal open={open} onOpenChange={setOpen} />
+            </Dialog>
           </div>
         </form>
       </Form>
