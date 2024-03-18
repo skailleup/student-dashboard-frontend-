@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { urbanist } from "../lib/font";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +15,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={urbanist.className}>{children}</body>
+      <body
+        className={cn(urbanist.className, {
+          "debug-screens": process.env.NODE_ENV === "development",
+        })}
+      >
+        {children}
+      </body>
     </html>
   );
 }
