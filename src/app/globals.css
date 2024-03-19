@@ -79,4 +79,10 @@
   a {
     @apply text-foreground;
   }
+
+  /* Hide the scrollbar */
+.flex::-webkit-scrollbar {
+  display: none;
+}
+
 }
