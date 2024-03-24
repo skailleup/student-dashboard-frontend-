@@ -8,7 +8,7 @@ import Notificationbell from "@/icons/notificationbell";
 import Pen from "@/icons/Pen";
 import Learning from "@/icons/learning";
 import Module from "@/icons/module";
-import LearningTrack from "@/icons/learning-Track.svg";
+import LearningTrack from "@/icons/learning-track.svg";
 import { Avatar, AvatarFallback, AvatarImage } from "../avatar";
 import CircularProgressBar from "../circularprogressbar";
 import { Form } from "@/components/ui/form";
