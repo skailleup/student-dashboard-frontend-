@@ -32,7 +32,7 @@ export default function SideNav() {
 
         <div className="w-full flex justify-between items-center border-white border-t-2 mb-4">
           <div className="hidden md:block">
-            <Avatar>
+            <Avatar className="h-10 w-10">
               <AvatarImage src="./images/zara.jpg" alt="image of zara chima" />
               <AvatarFallback>ZC</AvatarFallback>
             </Avatar>
