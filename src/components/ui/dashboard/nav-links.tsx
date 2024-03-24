@@ -1,18 +1,18 @@
 "use client";
 
-import CoursesIcon from "../../../../public/icons/Courses.svg";
-import DashboardIcon from "../../../../public/icons/home-alt.svg";
-import PostsIcon from "../../../../public/icons/Post.svg";
-import ResourcesIcon from "../../../../public/icons/Resources.svg";
-import ScheduleIcon from "../../../../public/icons/Schedule.svg";
-import SettingsIcon from "../../../../public/icons/setting.svg";
-import TaskIcon from "../../../../public/icons/Task.svg";
-import AccountIcon from "../../../../public/icons/user.svg";
-import PeertoPeerIcon from "../../../../public/icons/Vector.svg";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import Image from "next/image";
+import CoursesIcon from "@/icons/Courses.svg";
+import DashboardIcon from "@/icons/home-alt.svg";
+import PostsIcon from "@/icons/Post.svg";
+import ResourcesIcon from "@/icons/Resources.svg";
+import ScheduleIcon from "@/icons/Schedule.svg";
+import SettingsIcon from "@/icons/setting.svg";
+import TaskIcon from "@/icons/Task.svg";
+import AccountIcon from "@/icons/user.svg";
+import PeertoPeerIcon from "@/icons/Vector.svg";
 
 const links = [
   { name: "Dashboard", href: "/dashboard", icon: DashboardIcon },

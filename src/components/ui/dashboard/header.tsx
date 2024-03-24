@@ -1,18 +1,19 @@
 "use client";
 
 import React, { useState } from "react";
-import Notificationbell from "../../../../public/icons/notificationbell";
-import Pen from "../../../../public/icons/Pen";
-import Learning from "../../../../public/icons/learning";
-import Module from "../../../../public/icons/module";
-import LearningTrack from "../../../../public/icons/learning-Track.svg";
+import { useForm } from "react-hook-form";
 import Image from "next/image";
+
+import Notificationbell from "@/icons/notificationbell";
+import Pen from "@/icons/Pen";
+import Learning from "@/icons/learning";
+import Module from "@/icons/module";
+import LearningTrack from "@/icons/learning-Track.svg";
 import { Avatar, AvatarFallback, AvatarImage } from "../avatar";
 import CircularProgressBar from "../circularprogressbar";
 import { Form } from "@/components/ui/form";
 import AppInput from "@/components/ui/app-input";
 import { languageList } from "@/lib/languages";
-import { useForm } from "react-hook-form";
 
 const Header = () => {
   const formHook = useForm({});
@@ -23,18 +24,15 @@ const Header = () => {
   return (
     <div className="h-full overflow-y-auto overflow-x-hidden px-8 py-6">
       <div className="flex justify-between pb-5">
-        <div className="text-[18px] font-bold uppercase">
-          Dashboard
-        </div>
+        <div className="text-[18px] font-bold uppercase">Dashboard</div>
         <div className="flex gap-5 w-[60%]">
           <div className="flex relative pr-12">
             <Form {...formHook}>
-              <label htmlFor="" className="pr-3">Languages:</label>
               <AppInput
                 type="text"
                 control={control}
                 name="language"
-                placeholder="English UK"
+                placeholder="Language"
                 isSelect
                 options={languageList}
                 className="border-none outline-none"
@@ -50,11 +48,11 @@ const Header = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="flex flex-col md:flex-row justify-between pr-20">
         <div className="bg-primary text-white rounded-md w-full md:w-[60%] h-[20%] px-4 py-2 my-2 md:my-0 md:mr-2">
           <h3 className="text-[22px] tracking-widest">Hello Skailler, Welcome to your Dashboard</h3>
-          <p className="text-[14px]">You have learned 40% of your goal this week!</p> 
+          <p className="text-[14px]">You have learned 40% of your goal this week!</p>
           <p className="text-[14px]">Keep it up and improve your result!</p>
         </div>
         <div className="text-center pr-10">
@@ -98,4 +96,3 @@ const Header = () => {
 };
 
 export default Header;
-
