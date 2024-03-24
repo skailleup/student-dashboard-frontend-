@@ -5,7 +5,7 @@ import { FieldValues, FieldPath } from "react-hook-form";
 
 import { FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "../input";
-import Eye from "../../../../public/icons/Eye";
+import Eye from "@/icons/Eye";
 import {
   Select,
   SelectContent,

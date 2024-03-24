@@ -1,10 +1,10 @@
 import Link from "next/link";
 import NavLinks from "./nav-links";
-import SkailleupLogo from "../../../../public/icons/LogoWhite";
-import MobileLogo from "../../../../public/icons/logo-mobile.svg";
-import { LogOut, Github } from "lucide-react";
 import Image from "next/image";
-import LiveClass from "../../../../public/icons/LiveClass";
+import { LogOut, Github } from "lucide-react";
+import SkailleupLogo from "@/icons/LogoWhite";
+import MobileLogo from "@/icons/logo-mobile.svg";
+import LiveClass from "@/icons/LiveClass";
 import { Avatar, AvatarFallback, AvatarImage } from "../avatar";
 
 export default function SideNav() {

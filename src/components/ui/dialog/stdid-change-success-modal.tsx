@@ -1,8 +1,8 @@
 import React from "react";
+import Link from "next/link";
 
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import SentMailIcon from "@/icons/SentMail";
-import Link from "next/link";
 
 interface PasswordResetModalProps {
   open: boolean;
