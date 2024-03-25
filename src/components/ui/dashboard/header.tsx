@@ -15,11 +15,11 @@ const Header = () => {
   const { control } = formHook;
 
   return (
-    <header className="w-full p-4 md:p-8">
+    <header className="min-w-[320px] sm:w-full p-2 md:p-4">
       <div className="flex flex-col sm:flex-row justify-between">
         <div className="text-[18px] font-bold uppercase flex-1 mb-4 sm:0">Dashboard</div>
         <div className="flex gap-2 flex-3">
-          <div className="flex relative pr-12">
+          <div className="flex relative pr-4">
             <Form {...formHook}>
               <AppInput
                 type="text"
@@ -32,11 +32,11 @@ const Header = () => {
               />
             </Form>
           </div>
-          <div className="flex pr-12">
+          <div className="flex pr-4">
             <Notificationbell />
             <span className="px-4">Profile</span>
           </div>
-          <div className="pl-12">
+          <div className="pl-4 sm:pl-12">
             <Pen />
           </div>
         </div>

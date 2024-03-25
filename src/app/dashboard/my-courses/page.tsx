@@ -1,3 +1,3 @@
 export default function Page() {
-  return <p className={`p-4 md:p-8`}>MY COURSES PAGE!</p>;
+  return <p className={`min-h-screen p-2 md:p-4`}>MY COURSES PAGE!</p>;
 }
