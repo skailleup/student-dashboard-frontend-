@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Learning from "@/icons/learning";
 import Module from "@/icons/module";
