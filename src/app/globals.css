@@ -16,7 +16,7 @@
     --primary: #000e5c;
     --primary-foreground: #f7fffb;
     --primary-black: #17181a;
-    --primary-gray: #676767
+    --primary-gray: #676767;
 
     --secondary: #f7fffb;
     --secondary-foreground: #000e5c;
@@ -81,8 +81,7 @@
   }
 
   /* Hide the scrollbar */
-.flex::-webkit-scrollbar {
-  display: none;
-}
-
+  .flex::-webkit-scrollbar {
+    display: none;
+  }
 }
