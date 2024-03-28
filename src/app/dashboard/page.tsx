@@ -92,13 +92,13 @@ export default function Page() {
   return (
     <div className="min-h-screen w-full p-2 md:p-4">
       <div className="flex flex-col md:flex-row justify-between">
-        <div className="bg-primary text-white rounded-md w-full md:w-[60%] h-[20%] px-4 py-2 my-2 md:my-0 md:mr-2">
+        <div className="bg-primary text-white rounded-md w-full md:w-[60%] h-[20%] px-4 py-2 my-2">
           <h3 className="text-[22px] tracking-widest">Hello Skailler, Welcome to your Dashboard</h3>
           <p className="text-[14px]">You have learned 40% of your goal this week!</p>
           <p className="text-[14px]">Keep it up and improve your result!</p>
         </div>
         <div className="text-left sm:text-center">
-          <Avatar className="w-20 h-20 ml-6">
+          <Avatar className="w-20 h-20 ml-0 md:ml-6">
             <AvatarImage src="./images/abiola.jpg" alt="image of abiola nnamdi" />
             <AvatarFallback>ANM</AvatarFallback>
           </Avatar>
@@ -134,7 +134,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center gap-8 w-full mb-8">
+      <div className="flex flex-col w-full lg:flex-row items-center gap-8 mb-8">
         <div className="w-full">
           <div className="flex justify-between items-center mb-8">
             <p>My Courses</p>

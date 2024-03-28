@@ -9,7 +9,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../avatar";
 
 export default function SideNav() {
   return (
-    <div className="flex h-full flex-col bg-primary overflow-y-auto overflow-x-hidden">
+    <div className="flex h-full flex-col bg-primary overflow-y-auto overflow-x-hidden relative">
       <Link className="flex h-20 items-end justify-start bg-primary p-4 md:h-40" href="/">
         <div className="hidden md:block w-32 text-white md:w-40">
           <SkailleupLogo />
