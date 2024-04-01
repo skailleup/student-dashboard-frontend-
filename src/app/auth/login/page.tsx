@@ -29,7 +29,6 @@ export default function Page() {
   const { handleSubmit, control } = formHook;
 
   const submit = async (data: LoginInType) => {
-    // console.log("data", data);
     router.push("/dashboard");
   };
 

@@ -25,7 +25,6 @@ export default function Page() {
   const { handleSubmit, control } = formHook;
 
   const submit = async (data: { idOrEmail: string }) => {
-    // console.log("data", data);
     setOpen(true);
   };
 
