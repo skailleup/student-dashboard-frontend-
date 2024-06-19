@@ -25,10 +25,12 @@ export default function SideNav() {
           <NavLinks />
         </div>
 
-        <div className="bg-destructive text-white flex items-center gap-8 md:w-[80%] py-2 px-4 mx-auto cursor-pointer rounded-sm mb-8">
-          <LiveClass />
-          <p className="hidden md:block">Live Class</p>
-        </div>
+        <Link href="/dashboard/live-class">
+          <div className="bg-destructive text-white flex items-center gap-8 md:w-[80%] py-2 px-4 mx-auto cursor-pointer rounded-sm mb-8">
+            <LiveClass />
+            <p className="hidden md:block">Live Class</p>
+          </div>
+        </Link>
 
         <div className="w-full flex justify-between items-center border-white border-t-2 mb-4">
           <div className="hidden md:block">
