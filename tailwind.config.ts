@@ -14,6 +14,11 @@ const config = {
     },
     extend: {
       colors: {
+        borderWidth: {
+          '16': '16px',
+          '20': '20px',
+          '24': '24px',
+        },
         border: "var(--border)",
         input: "var(--input)",
         ring: "var(--ring)",

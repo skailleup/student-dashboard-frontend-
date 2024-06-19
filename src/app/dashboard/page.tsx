@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import DataTable, { TableColumn } from "react-data-table-component";
 import { useRouter } from "next/navigation";
-
 import Learning from "@/icons/learning";
 import Module from "@/icons/module";
 import LearningTrack from "@/icons/learning-track.svg";
