@@ -18,6 +18,7 @@
     "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tabs": "^1.0.4",
+    "@tanstack/react-table": "^8.19.2",
     "@types/chart.js": "^2.9.41",
     "axios": "^1.6.8",
     "chart.js": "^4.4.2",
