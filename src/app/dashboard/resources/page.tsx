@@ -1,6 +1,12 @@
 
 import TabNav from '@/components/tabNav';
 import SearchComponent from '@/components/resourcesPage/search'
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Resources',
+  icons: '/images/logo.jpg',
+};
 
 
 export default function Page() {

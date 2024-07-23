@@ -13,6 +13,12 @@ import { CoursesType } from "@/types";
 import LoadingSpinner from "@/components/ui/spinner";
 import { Calendar } from "@/components/ui/calendar";
 import EmptyTask from "@/images/empty-task.svg";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'My Dashboard',
+  icons: '/images/logo.jpg',
+};
 
 const Courses: CoursesType[] = [
   {
