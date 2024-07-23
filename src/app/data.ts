@@ -94,7 +94,7 @@ export const folderContents = {
 
 export const videos = [
   {
-    videoUrl: 'https://www.youtube.com/embed/dQw4w8WgXcQ',
+    videoUrl: 'https://www.youtube.com/embed/m_-G9Cacx2U?si=iZa-9h58tujlWj6u',
     title: 'Introduction to C programming',
     length: '01:45:00hrs',
     subtitle: 'Week 1 Live class',
@@ -102,7 +102,7 @@ export const videos = [
     id: 1
   },
   {
-    videoUrl: 'https://www.youtube.com/embed/dQw4w8WgXcQ',
+    videoUrl: 'https://www.youtube.com/embed/m_-G9Cacx2U?si=iZa-9h58tujlWj6u',
     title: 'Introduction to Rust programming',
     length: '01:45:00hrs',
     subtitle: 'Week 1 Live class',
@@ -110,7 +110,7 @@ export const videos = [
     id: 2
   },
   {
-    videoUrl: 'https://www.youtube.com/embed/dQw4w8WgXcQ',
+    videoUrl: 'https://www.youtube.com/embed/m_-G9Cacx2U?si=iZa-9h58tujlWj6u',
     title: 'Introduction to C programming',
     length: '01:45:00hrs',
     subtitle: 'Week 1 Live class',
@@ -118,7 +118,7 @@ export const videos = [
     id: 3
   },
   {
-    videoUrl: 'https://www.youtube.com/embed/dQw4w8WgXcQ',
+    videoUrl: 'https://www.youtube.com/embed/m_-G9Cacx2U?si=iZa-9h58tujlWj6u',
     title: 'Introduction to JavaScript programming',
     length: '01:45:00hrs',
     subtitle: 'Week 1 Live class',
@@ -126,7 +126,7 @@ export const videos = [
     id: 4
   },
   {
-    videoUrl: 'https://www.youtube.com/embed/dQw4w8WgXcQ',
+    videoUrl: 'https://www.youtube.com/embed/m_-G9Cacx2U?si=iZa-9h58tujlWj6u',
     title: 'Introduction to C++',
     length: '01:45:00hrs',
     subtitle: 'Week 1 Live class',
@@ -134,7 +134,7 @@ export const videos = [
     id: 5
   },
   {
-    videoUrl: 'https://www.youtube.com/embed/dQw4w8WgXcQ',
+    videoUrl: 'https://www.youtube.com/embed/m_-G9Cacx2U?si=iZa-9h58tujlWj6u',
     title: 'Introduction to C programming',
     length: '01:45:00hrs',
     subtitle: 'Week 1 Live class',
