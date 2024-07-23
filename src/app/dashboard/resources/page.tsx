@@ -1,3 +1,15 @@
+
+import TabNav from '@/components/tabNav';
+import SearchComponent from '@/components/resourcesPage/search'
+
+
 export default function Page() {
-  return <p className={`min-h-screen p-2 md:p-4`}>MY RESOURCES PAGE!!!</p>;
+
+  return (
+    <div className={`min-h-screen`}>
+      {/* create a header for this page to include ht e search input and notifications icon */}
+      <SearchComponent  />
+      <TabNav />
+    </div>
+  );
 }
